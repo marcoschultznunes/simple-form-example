@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+    <main>
+
+        <form action="#" id="profile-form">
+            <header id="form-header">
+                <h1>Profile</h1>
+                <hr>
+            </header>
+
+            <label for="name">Name:</label>
+            <input type="text" name="name" class="form-input">
+            <label for="email">Email:</label>
+            <input type="email" name="email" class="form-input">
+
+            <label for="birth">Birthdate:</label>
+            <input type="date" name="birth" class="form-input">
+
+            <label for="gender">Gender:</label>
+            <div id="gender-button-group" name="gender" class="form-input radio-group">
+                M <input type="radio" id="r-male" name="gender" value="Male"/>
+                F <input type="radio" id="r-female" name="gender" value="Female"/>
+                Other <input type="radio" id="r-other" name="gender" value="Other"/>
+            </div>
+
+            <label for="category">Profession:</label>
+            <select name="profession" id="profession-select" class="form-input">
+                <option value="Developer">Developer</option>
+                <option value="Software Engineer">Software Engineer</option>
+                <option value="Systems Analyst">Systems Analyst</option>
+                <option value="Tester">Tester</option>
+            </select>
+
+            <label for="description">Description:</label>
+            <textarea name="description" cols="30" rows="10" class="form-input"></textarea>
+
+            <div id="comments-div">
+                <label for="comments">Allow comments </label>
+                <input type="checkbox" name="comments" class="form-input" id="comments-checkbox">
+            </div>
+
+            <button id="save-profile-button">Save Profile</button>
+            
+        </form>
+    </main>
+
+    <script src="js/form.js"></script>
+</body>
+</html>
